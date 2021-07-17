@@ -281,27 +281,6 @@
       "icons": [ "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/52pj.png", "https://raw.githubusercontent.com/NobyDa/mini/master/Color/52pj.png" ]
     },
     {
-      "id": "KuaiKan",
-      "name": "快看漫画",
-      "keys": [ "@KKMH.COOKIE", "@KKMH.TIME", "@KKMH.UID", "@KKMH.DATE" ],
-      "descs_html": [
-        "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://raw.githubusercontent.com/NobyDa/Script/master/KuaiKan-DailyBonus/KKMH.js\">脚本注释</a></h4>"
-      ],
-      "settings": [
-        {
-          "id": "@KKMH.LOG",
-          "name": "响应日志",
-          "val": false,
-          "type": "boolean",
-          "desc": "打印原始签到结果, 用于调试脚本, 一般用户建议关闭."
-        }
-      ],
-      "script": "https://raw.githubusercontent.com/NobyDa/Script/master/KuaiKan-DailyBonus/KKMH.js",
-      "author": "@NobyDa",
-      "repo": "https://github.com/NobyDa/Script/blob/master/KuaiKan-DailyBonus/KKMH.js",
-      "icons": [ "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/KuaiKan.png", "https://raw.githubusercontent.com/NobyDa/mini/master/Color/KuaiKan.png" ]
-    },
-    {
       "id": "BaiduTB",
       "name": "百度贴吧",
       "keys": [ "CookieTB" ],
