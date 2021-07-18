@@ -76,9 +76,8 @@ https://raw.githubusercontent.com/w37fhy/QuantumultX/master/QuantumultX_Task.jso
 https://raw.githubusercontent.com/w37fhy/QuantumultX/master/QuantumultX_diy.conf
 https://raw.githubusercontent.com/w37fhy/QuantumultX/master/shadowrocket_diy.conf
 
-
-
-
+#other
+https://raw.githubusercontent.com/rvnpkrf/remote/master/QunatumultX/rewrite.list
 
 
 
