@@ -78,6 +78,6 @@ https://raw.githubusercontent.com/w37fhy/QuantumultX/master/shadowrocket_diy.con
 
 #other
 https://raw.githubusercontent.com/rvnpkrf/remote/master/QunatumultX/rewrite.list
-
-
+https://raw.githubusercontent.com/rvnpkrf/remote/master/QunatumultX/Cookie_Remote.conf
+https://raw.githubusercontent.com/rvnpkrf/remote/master/QunatumultX/TaskGallery.json
 
