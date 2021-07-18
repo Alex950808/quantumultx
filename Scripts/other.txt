@@ -41,7 +41,7 @@ https://raw.githubusercontent.com/Sunert/Profiles/master/QuantumultX/Rewrite/Rem
 https://raw.githubusercontent.com/Sunert/Profiles/master/QuantumultX/Rewrite/Task_Remote.conf
 https://raw.githubusercontent.com/Sunert/Script/master/Task/sunert.boxjs.json
 
-#黑科技
+#榛戠鎶�
 https://ivapp.cn/quantumultX.conf
 
 #DivineEngine
@@ -51,9 +51,9 @@ https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrit
 
 #Oreomeow
 https://raw.githubusercontent.com/Oreomeow/QuanX/master/sngx2021.conf
-#ddgksf2013解锁vip
+#ddgksf2013瑙ｉ攣vip
 https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Rewrite/UnlockApp.conf
-#少年歌行解锁vip
+#灏戝勾姝岃瑙ｉ攣vip
 https://raw.githubusercontent.com/Oreomeow/QuanX/master/rewrite/unlockvip.conf
 https://raw.githubusercontent.com/Oreomeow/QuanX/master/task/AllinOne.json
 
@@ -66,3 +66,19 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Qu
 https://raw.githubusercontent.com/wch19830910/wch/main/VIP/VIP1.conf
 https://raw.githubusercontent.com/wch19830910/wch/main/VIP/VIP2.conf
 https://raw.githubusercontent.com/wch19830910/wch/main/VIP/Other.comf
+
+
+#w37fhy
+https://github.com/w37fhy/QuantumultX
+https://raw.githubusercontent.com/w37fhy/QuantumultX/master/QuantumultX_Cookie.conf
+https://raw.githubusercontent.com/w37fhy/QuantumultX/master/QuantumultX_JS.conf
+https://raw.githubusercontent.com/w37fhy/QuantumultX/master/QuantumultX_Task.json
+https://raw.githubusercontent.com/w37fhy/QuantumultX/master/QuantumultX_diy.conf
+https://raw.githubusercontent.com/w37fhy/QuantumultX/master/shadowrocket_diy.conf
+
+
+
+
+
+
+
