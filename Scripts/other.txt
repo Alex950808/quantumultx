@@ -81,3 +81,12 @@ https://raw.githubusercontent.com/rvnpkrf/remote/master/QunatumultX/rewrite.list
 https://raw.githubusercontent.com/rvnpkrf/remote/master/QunatumultX/Cookie_Remote.conf
 https://raw.githubusercontent.com/rvnpkrf/remote/master/QunatumultX/TaskGallery.json
 
+#TG频道 https://t.me/tom_ww
+https://github.com/xl2101200/-
+https://raw.githubusercontent.com/xl2101200/-/main/Tom_Cookie.conf
+https://raw.githubusercontent.com/xl2101200/-/main/Tom_task.josn
+https://raw.githubusercontent.com/xl2101200/-/main/tom.box.json
+
+
+
+
