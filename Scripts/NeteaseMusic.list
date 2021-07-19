@@ -21,3 +21,7 @@ http=aimer.one:2333, fast-open=false, udp-relay=false, tag=🎶Music20
 http=fs2.ilogic.net.cn:5200, fast-open=false, udp-relay=false, tag=🎶Music21
 http=3music.poetyin.me:100, over-tls=false, fast-open=false, udp-relay=false, tag=🎶Music22
 http=aimer.one:3333,fast-open=false, udp-relay=false, tag=🎶Music23
+
+shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=🎶Music24
+shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=🎶Music25
+shadowsocks=101.132.192.212:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=🎶Music26
