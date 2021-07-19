@@ -24,4 +24,7 @@ http=aimer.one:3333,fast-open=false, udp-relay=false, tag=🎶Music23
 
 shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=🎶Music24
 shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=🎶Music25
-shadowsocks=101.132.192.212:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=🎶Music26
+shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_vrfn, fast-open=false, udp-relay=false, tag=🎶Music26
+shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_vrfn, fast-open=false, udp-relay=false, tag=🎶Music27
+shadowsocks=101.132.192.212:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=🎶Music28
+vmess = 146.56.117.163:23456, method=chacha20-ietf-poly1305, password=065813ec-84cb-436c-ae6a-e3ec698dbc79, fast-open=false, tag=🎶Music29
