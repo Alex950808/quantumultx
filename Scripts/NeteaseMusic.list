@@ -1,30 +1,31 @@
-http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag=🎶Music1
-http=os.dlj.tf:20000, fast-open=false, udp-relay=false, tag=🎶Music2
-http=os.dlj.tf:30000, fast-open=false, udp-relay=false, tag=🎶Music3
-shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2, fast-open=false, udp-relay=false, tag=🎶Music4
-shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2, fast-open=false, udp-relay=false, tag=🎶Music5
-http=music.lolico.me:39000, fast-open=false, udp-relay=false, tag=🎶Music6
-http=block4music.poetyin.me:39000, fast-open=false, udp-relay=false, tag=🎶Music7
-shadowsocks=588906.tk:3001, method=aes-128-gcm, password=UnblockNeteaseMusic, fast-open=false, udp-relay=false, tag=🎶Music8
-http=223.112.128.66:23333, fast-open=false, udp-relay=false, tag=🎶Music9
-http=taron.top:200, fast-open=false, udp-relay=false, tag=🎶Music10
-http=lolico.me:443, fast-open=false, udp-relay=false, tag=🎶Music11
-http=aimer.one:23333, fast-open=false, udp-relay=false, tag=🎶Music12
-http=salvan.icu:19980, fast-open=false, udp-relay=false, tag=🎶Music13
-http=34.92.129.82:2021, fast-open=false, udp-relay=false, tag=🎶Music14
-http=1.116.214.16:19980, fast-open=false, udp-relay=false, tag=🎶Music15
-http=43.128.37.178:2021, fast-open=false, udp-relay=false, tag=🎶Music16
-http=101.132.79.113:23333, fast-open=false, udp-relay=false, tag=🎶Music17
-http=music.griouges.cn:39000, fast-open=false, udp-relay=false, tag=🎶Music18
-shadowsocks=proxy.plusmedia.site:58081, method=rc4-md5, password=T5ckndbLSXHQ, fast-open=false, udp-relay=false, tag=🎶Music19
-http=aimer.one:2333, fast-open=false, udp-relay=false, tag=🎶Music20
-http=fs2.ilogic.net.cn:5200, fast-open=false, udp-relay=false, tag=🎶Music21
-http=3music.poetyin.me:100, over-tls=false, fast-open=false, udp-relay=false, tag=🎶Music22
-http=aimer.one:3333,fast-open=false, udp-relay=false, tag=🎶Music23
+http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag=🎶Music1#106.52.127.72:19951
+http=os.dlj.tf:20000, fast-open=false, udp-relay=false, tag=🎶Music2#os.dlj.tf:20000
+http=os.dlj.tf:30000, fast-open=false, udp-relay=false, tag=🎶Music3#os.dlj.tf:30000
+shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2, fast-open=false, udp-relay=false, tag=🎶Music4#music.desperadoj.com:30001
+shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2, fast-open=false, udp-relay=false, tag=🎶Music5#music.desperadoj.com:30003
+http=music.lolico.me:39000, fast-open=false, udp-relay=false, tag=🎶Music6#music.lolico.me:39000
+http=block4music.poetyin.me:39000, fast-open=false, udp-relay=false, tag=🎶Music7#block4music.poetyin.me:39000
+shadowsocks=588906.tk:3001, method=aes-128-gcm, password=UnblockNeteaseMusic, fast-open=false, udp-relay=false, tag=🎶Music8#588906.tk:3001
+http=223.112.128.66:23333, fast-open=false, udp-relay=false, tag=🎶Music9#223.112.128.66:23333
+http=taron.top:200, fast-open=false, udp-relay=false, tag=🎶Music10#taron.top:200
+http=lolico.me:443, fast-open=false, udp-relay=false, tag=🎶Music11#lolico.me:443
+http=aimer.one:23333, fast-open=false, udp-relay=false, tag=🎶Music12#aimer.one:23333
+http=salvan.icu:19980, fast-open=false, udp-relay=false, tag=🎶Music13#salvan.icu:19980
+http=34.92.129.82:2021, fast-open=false, udp-relay=false, tag=🎶Music14#34.92.129.82:2021
+http=1.116.214.16:19980, fast-open=false, udp-relay=false, tag=🎶Music15#1.116.214.16:19980
+http=43.128.37.178:2021, fast-open=false, udp-relay=false, tag=🎶Music16#43.128.37.178:2021
+http=101.132.79.113:23333, fast-open=false, udp-relay=false, tag=🎶Music17#101.132.79.113:23333
+http=music.griouges.cn:39000, fast-open=false, udp-relay=false, tag=🎶Music18#music.griouges.cn:39000
+shadowsocks=proxy.plusmedia.site:58081, method=rc4-md5, password=T5ckndbLSXHQ, fast-open=false, udp-relay=false, tag=🎶Music19#proxy.plusmedia.site:58081
+http=aimer.one:2333, fast-open=false, udp-relay=false, tag=🎶Music20#aimer.one:2333
+http=fs2.ilogic.net.cn:5200, fast-open=false, udp-relay=false, tag=🎶Music21#fs2.ilogic.net.cn:5200
+http=3music.poetyin.me:100, over-tls=false, fast-open=false, udp-relay=false, tag=🎶Music22#3music.poetyin.me:100
+http=aimer.one:3333,fast-open=false, udp-relay=false, tag=🎶Music23#aimer.one:3333
 
-shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=🎶Music24
-shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=🎶Music25
-shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_vrfn, fast-open=false, udp-relay=false, tag=🎶Music26
-shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_vrfn, fast-open=false, udp-relay=false, tag=🎶Music27
-shadowsocks=101.132.192.212:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=🎶Music28
-vmess = 146.56.117.163:23456, method=chacha20-ietf-poly1305, password=065813ec-84cb-436c-ae6a-e3ec698dbc79, fast-open=false, tag=🎶Music29
+shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=🎶Music24#music.desperadoj.com:30001
+shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=🎶Music25#music.desperadoj.com:30003
+shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_vrfn, fast-open=false, udp-relay=false, tag=🎶Music26#music.desperadoj.com:30001
+shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_vrfn, fast-open=false, udp-relay=false, tag=🎶Music27#music.desperadoj.com:30003
+shadowsocks=101.132.192.212:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=🎶Music28#101.132.192.212:30003
+vmess = 146.56.117.163:23456, method=chacha20-ietf-poly1305, password=065813ec-84cb-436c-ae6a-e3ec698dbc79, fast-open=false, tag=🎶Music29#146.56.117.163:23456
+vmess = music1.ziypai.com:11637, method=chacha20-ietf-poly1305, password=f54ddceb-df0f-4bf8-abe6-cacee1920584, obfs=ws, obfs-host=music1.ziypai.com, obfs-uri=/Netease, fast-open=false, udp-relay=false, tag=🎶Music30#music1.ziypai.com:11637
