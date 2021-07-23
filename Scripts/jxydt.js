@@ -11,7 +11,7 @@ obj={
             "endTime": "2029-07-22", 
             "deviceOverflow": "0", 
             "status": "1", 
-            "overdueSecond": "0"
+            "overdueSecond": "999999"
         }, 
         "RELIABLE_VIP_KM4": {
             "resourceId": "", 
@@ -22,7 +22,7 @@ obj={
             "endTime": "2029-07-22", 
             "deviceOverflow": "0", 
             "status": "1", 
-            "overdueSecond": "0"
+            "overdueSecond": "999999"
         }, 
         "RELIABLE_VIP_KM1": {
             "resourceId": "", 
@@ -33,7 +33,7 @@ obj={
             "endTime": "2029-07-22", 
             "deviceOverflow": "0", 
             "status": "1", 
-            "overdueSecond": "0"
+            "overdueSecond": "999999"
         }, 
         "SVIP_LIVECAMP": {
             "resourceId": "", 
@@ -44,7 +44,7 @@ obj={
             "endTime": "2029-07-22", 
             "deviceOverflow": "0", 
             "status": "5", 
-            "overdueSecond": "0"
+            "overdueSecond": "999999"
         }, 
         "VIP": {
             "resourceId": "", 
@@ -55,7 +55,7 @@ obj={
             "endTime": "2029-07-22", 
             "deviceOverflow": "0", 
             "status": "1", 
-            "overdueSecond": "0"
+            "overdueSecond": "999999"
         }, 
         "SVIP": {
             "resourceId": "", 
@@ -66,7 +66,7 @@ obj={
             "endTime": "2029-07-22", 
             "deviceOverflow": "0", 
             "status": "5", 
-            "overdueSecond": "0"
+            "overdueSecond": "999999"
         }, 
         "SPEED_VIP_KM1": {
             "resourceId": "", 
@@ -77,7 +77,7 @@ obj={
             "endTime": "2029-07-22", 
             "deviceOverflow": "0", 
             "status": "1", 
-            "overdueSecond": "0"
+            "overdueSecond": "999999"
         }, 
         "SPEED_VIP_KM2": {
             "resourceId": "", 
@@ -88,7 +88,7 @@ obj={
             "endTime": "2029-07-22", 
             "deviceOverflow": "0", 
             "status": "1", 
-            "overdueSecond": "0"
+            "overdueSecond": "999999"
         }, 
         "SPEED_VIP_KM3": {
             "resourceId": "", 
@@ -99,7 +99,7 @@ obj={
             "endTime": "2029-07-22", 
             "deviceOverflow": "0", 
             "status": "1", 
-            "overdueSecond": "0"
+            "overdueSecond": "999999"
         }
     }, 
     "msg": "ok"
