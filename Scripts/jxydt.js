@@ -10,7 +10,7 @@ obj={
             "beginTime": "2021-07-22", 
             "endTime": "2029-07-22", 
             "deviceOverflow": "0", 
-            "status": "5", 
+            "status": "1", 
             "overdueSecond": "0"
         }, 
         "RELIABLE_VIP_KM4": {
@@ -21,7 +21,7 @@ obj={
             "beginTime": "2021-07-22", 
             "endTime": "2029-07-22", 
             "deviceOverflow": "0", 
-            "status": "5", 
+            "status": "1", 
             "overdueSecond": "0"
         }, 
         "RELIABLE_VIP_KM1": {
@@ -32,7 +32,7 @@ obj={
             "beginTime": "2021-07-22", 
             "endTime": "2029-07-22", 
             "deviceOverflow": "0", 
-            "status": "5", 
+            "status": "1", 
             "overdueSecond": "0"
         }, 
         "SVIP_LIVECAMP": {
@@ -54,7 +54,7 @@ obj={
             "beginTime": "2021-07-22", 
             "endTime": "2029-07-22", 
             "deviceOverflow": "0", 
-            "status": "5", 
+            "status": "1", 
             "overdueSecond": "0"
         }, 
         "SVIP": {
@@ -76,7 +76,7 @@ obj={
             "beginTime": "2021-07-22", 
             "endTime": "2029-07-22", 
             "deviceOverflow": "0", 
-            "status": "5", 
+            "status": "1", 
             "overdueSecond": "0"
         }, 
         "SPEED_VIP_KM2": {
@@ -87,7 +87,7 @@ obj={
             "beginTime": "2021-07-22", 
             "endTime": "2029-07-22", 
             "deviceOverflow": "0", 
-            "status": "5", 
+            "status": "1", 
             "overdueSecond": "0"
         }, 
         "SPEED_VIP_KM3": {
@@ -98,7 +98,7 @@ obj={
             "beginTime": "2021-07-22", 
             "endTime": "2029-07-22", 
             "deviceOverflow": "0", 
-            "status": "5", 
+            "status": "1", 
             "overdueSecond": "0"
         }
     }, 
