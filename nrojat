@@ -2,6 +2,7 @@ proxies:
   ### password:U2Q4EyzpHph84whaz9
   ### password:EJBsFzWnEgXZnmzHq8
   ### password:cSD2tExedR5RgGGKtb
+  ### password:x3MdzdVvaffC97yuHt
   - {name: trojan/ty1-1.nrojat.com:443, server: ty1-1.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: ty1-1.nrojat.com, skip-cert-verify: false}
   - {name: trojan/ty1-2.nrojat.com:443, server: ty1-2.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: ty1-2.nrojat.com, skip-cert-verify: false}
   - {name: trojan/fm1-1.nrojat.com:443, server: fm1-1.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: fm1-1.nrojat.com, skip-cert-verify: false}
