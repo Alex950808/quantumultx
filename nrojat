@@ -1,0 +1,35 @@
+proxies:
+  ### password:U2Q4EyzpHph84whaz9
+  ### password:EJBsFzWnEgXZnmzHq8
+  ### password:cSD2tExedR5RgGGKtb
+  - {name: trojan/ty1-1.nrojat.com:443, server: ty1-1.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: ty1-1.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/ty1-2.nrojat.com:443, server: ty1-2.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: ty1-2.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/fm1-1.nrojat.com:443, server: fm1-1.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: fm1-1.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/fm1-2.nrojat.com:443, server: fm1-2.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: fm1-2.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/fm1-3.nrojat.com:443, server: fm1-3.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: fm1-3.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/fm1-4.nrojat.com:443, server: fm1-4.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: fm1-4.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/fm2-1.nrojat.com:443, server: fm2-1.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: fm2-1.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/fm2-2.nrojat.com:443, server: fm2-2.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: fm2-2.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/fm2-3.nrojat.com:443, server: fm2-3.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: fm2-3.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/fm2-4.nrojat.com:443, server: fm2-4.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: fm2-4.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/os1-2.nrojat.com:443, server: os1-2.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: os1-2.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/os1-8.nrojat.com:443, server: os1-8.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: os1-8.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/os2-1.nrojat.com:443, server: os2-1.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: os2-1.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/ty2-2.nrojat.com:443, server: ty2-2.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: ty2-2.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/ty2-3.nrojat.com:443, server: ty2-3.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: ty2-3.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/hk1-1.nrojat.com:443, server: hk1-1.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: hk1-1.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/hk1-2.nrojat.com:443, server: hk1-2.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: hk1-2.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/de1-1.nrojat.com:443, server: de1-1.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: de1-1.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/de1-2.nrojat.com:443, server: de1-2.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: de1-2.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/de2-1.nrojat.com:443, server: de2-1.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: de2-1.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/de2-2.nrojat.com:443, server: de2-2.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: de2-2.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/nl1-2.nrojat.com:443, server: nl1-2.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: nl1-2.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/ee1-1.nrojat.com:443, server: ee1-1.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: ee1-1.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/au1-1.nrojat.com:443, server: au1-1.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: au1-1.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/tw1-1.nrojat.com:443, server: tw1-1.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: tw1-1.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/pro-uk1-1.nrojat.com:443, server: pro-uk1-1.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: pro-uk1-1.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/pro-iplc-hk1-1.nrojat.com:443, server: pro-iplc-hk1-1.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: pro-iplc-hk1-1.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/pro-iplc-hk1-2.nrojat.com:443, server: pro-iplc-hk1-2.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: pro-iplc-hk1-2.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/pro-iplc-hk2-1.nrojat.com:443, server: pro-iplc-hk2-1.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: pro-iplc-hk2-1.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/pro-iplc-hk2-2.nrojat.com:443, server: pro-iplc-hk2-2.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: pro-iplc-hk2-2.nrojat.com, skip-cert-verify: false}
+  - {name: trojan/pro-iplc-hk2-6.nrojat.com:443, server: pro-iplc-hk2-6.nrojat.com, port: 443, type: trojan, password: U2Q4EyzpHph84whaz9, sni: pro-iplc-hk2-6.nrojat.com, skip-cert-verify: false}
