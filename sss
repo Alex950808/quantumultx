@@ -1,15 +1,4 @@
-
 proxies:
-# 支持的协议及加密算法示例请查阅 Clash 项目 README 以使用最新格式：https://github.com/Dreamacro/clash/blob/master/README.md
-
-# Shadowsocks 支持的加密方式:
-#   aes-128-gcm aes-192-gcm aes-256-gcm
-#   aes-128-cfb aes-192-cfb aes-256-cfb
-#   aes-128-ctr aes-192-ctr aes-256-ctr
-#   rc4-md5 chacha20-ietf xchacha20
-#   chacha20-ietf-poly1305 xchacha20-ietf-poly1305
-
-# VMess
 - name: "HK2(v2ray)"
   type: vmess
   server: alpha.conan.live
@@ -17,64 +6,48 @@ proxies:
   uuid: 6e7ea1e8-ab3a-4199-97b5-369b8269b907
   alterId: 2
   cipher: auto
-  # udp: true
   tls: true
-  # skip-cert-verify: true
   network: ws
   ws-path: /55e7e3/
   ws-headers:
     Host: alpha.conan.live
 
-# Trojan
 - name: "Ali-HK2(trojan)"
   type: trojan
   server: alpha.conan.live
   port: 443
   password: wNpRsX1rybhXDZl1
-  # udp: true
-  # sni: example.com # aka server name
   alpn:
      - h2
      - http/1.1
-  # skip-cert-verify: true
 
 - name: "Ali-HK3(trojan)"
   type: trojan
   server: hk3.conan.live
   port: 443
   password: 81YRJ6pWMGNem4EX
-  # udp: true
-  # sni: example.com # aka server name
   alpn:
      - h2
      - http/1.1
-  # skip-cert-verify: true
 
 - name: "Google-HK1(trojan)"
   type: trojan
   server: beryl.conan.live
   port: 443
   password: Ew22xYVO02VBUXO0
-  # udp: true
-  # sni: example.com # aka server name
   alpn:
      - h2
      - http/1.1
-  # skip-cert-verify: true
 
 - name: "Google-HK2(trojan)"
   type: trojan
   server: coffee.conan.live
   port: 443
   password: Awf1cIKnw4NmAhLV
-  # udp: true
-  # sni: example.com # aka server name
   alpn:
      - h2
      - http/1.1
-  # skip-cert-verify: true
-
-# Netease Music
+     
 - name: "🎵 解锁节点1"
   type: http
   server: 47.106.38.136
