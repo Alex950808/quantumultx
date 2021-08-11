@@ -1,0 +1,17 @@
+proxies:
+  - {name: 🇭🇰 香港, server: 149.129.71.253, port: 60000, type: ssr, cipher: dummy, password: banana007, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇭🇰 香港 2, server: 149.129.113.242, port: 60001, type: ssr, cipher: dummy, password: banana007, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇭🇰 香港 3, server: 149.129.127.38, port: 60000, type: ssr, cipher: dummy, password: banana007, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇺🇸 美国, server: 67.198.228.228, port: 50088, type: ssr, cipher: dummy, password: check, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇭🇰 香港 4, server: 149.129.125.251, port: 60086, type: ssr, cipher: dummy, password: banana007, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇭🇰 香港 5, server: 149.129.105.50, port: 60000, type: ssr, cipher: dummy, password: banana007, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇭🇰 香港 6, server: 120.241.72.114, port: 40088, type: ssr, cipher: dummy, password: banana007, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇯🇵 日本, server: 120.241.72.114, port: 40089, type: ssr, cipher: dummy, password: sealnet+305, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇺🇸 美国 2, server: 174.139.126.153, port: 60086, type: ssr, cipher: dummy, password: banana., protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇺🇸 美国 3, server: 38.143.0.100, port: 60000, type: ssr, cipher: dummy, password: banana, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇺🇸 美国 4, server: 154.3.6.5, port: 50000, type: ssr, cipher: dummy, password: banana, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇭🇰 香港 7, server: 120.232.173.10, port: 40088, type: ssr, cipher: dummy, password: banana007, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇺🇸 美国 5, server: 154.9.204.54, port: 60000, type: ssr, cipher: dummy, password: banana, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇺🇸 美国 6, server: 154.9.204.15, port: 60000, type: ssr, cipher: dummy, password: banana, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇺🇸 美国 7, server: 100.43.163.9, port: 60086, type: ssr, cipher: dummy, password: banana007, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇺🇸 美国 8, server: 98.126.31.16, port: 60086, type: ssr, cipher: dummy, password: banana007, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
