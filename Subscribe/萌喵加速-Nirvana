@@ -1,0 +1,45 @@
+proxies:
+  - {name: 香港SS-01, server: hk-ss01.meo-sub.xyz, port: 12001, type: ss, cipher: aes-128-gcm, password: bc282fce-50e4-4035-bb1b-8d2bb731669e}
+  - {name: 香港SS-02, server: hk-ss02.meo-sub.xyz, port: 12002, type: ss, cipher: aes-128-gcm, password: bc282fce-50e4-4035-bb1b-8d2bb731669e}
+  - {name: 香港SS-03, server: hk-ss03.meo-sub.xyz, port: 12003, type: ss, cipher: aes-128-gcm, password: bc282fce-50e4-4035-bb1b-8d2bb731669e}
+  - {name: 香港SS-04, server: hk-ss04.meo-sub.xyz, port: 12004, type: ss, cipher: aes-128-gcm, password: bc282fce-50e4-4035-bb1b-8d2bb731669e}
+  - {name: 日本SS-01, server: jp-ss01.meo-sub.xyz, port: 12011, type: ss, cipher: aes-128-gcm, password: bc282fce-50e4-4035-bb1b-8d2bb731669e}
+  - {name: 日本SS-02, server: jp-ss02.meo-sub.xyz, port: 12012, type: ss, cipher: aes-128-gcm, password: bc282fce-50e4-4035-bb1b-8d2bb731669e}
+  - {name: 日本SS-03, server: jp-ss03.meo-sub.xyz, port: 12013, type: ss, cipher: aes-128-gcm, password: bc282fce-50e4-4035-bb1b-8d2bb731669e}
+  - {name: 美国SS-01, server: us-ss01.meo-sub.xyz, port: 12021, type: ss, cipher: aes-128-gcm, password: bc282fce-50e4-4035-bb1b-8d2bb731669e}
+  - {name: 美国SS-02, server: us-ss02.meo-sub.xyz, port: 12022, type: ss, cipher: aes-128-gcm, password: bc282fce-50e4-4035-bb1b-8d2bb731669e}
+  - {name: 美国SS-03, server: us-ss03.meo-sub.xyz, port: 12023, type: ss, cipher: aes-128-gcm, password: bc282fce-50e4-4035-bb1b-8d2bb731669e}
+  - {name: 台湾SS-01, server: tw-ss01.meo-sub.xyz, port: 12031, type: ss, cipher: aes-128-gcm, password: bc282fce-50e4-4035-bb1b-8d2bb731669e}
+  - {name: 台湾SS-02, server: tw-ss02.meo-sub.xyz, port: 12032, type: ss, cipher: aes-128-gcm, password: bc282fce-50e4-4035-bb1b-8d2bb731669e}
+  - {name: 台湾SS-03, server: tw-ss03.meo-sub.xyz, port: 12033, type: ss, cipher: aes-128-gcm, password: bc282fce-50e4-4035-bb1b-8d2bb731669e}
+  - {name: 台湾SS-04, server: tw-ss04.meo-sub.xyz, port: 12034, type: ss, cipher: aes-128-gcm, password: bc282fce-50e4-4035-bb1b-8d2bb731669e}
+  - {name: 香港中继1, server: hk01.dns.meo-sub.xyz, port: 1201, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 香港中继2, server: hk02.dns.meo-sub.xyz, port: 1202, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 香港中继3, server: hk03.dns.meo-sub.xyz, port: 1203, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 香港中继4, server: hk04.dns.meo-sub.xyz, port: 1204, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hk04.dns.meo-sub.xyz}}
+  - {name: 香港中继5, server: hk05.dns.meo-sub.xyz, port: 1205, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 香港中继6, server: hk06.dns.meo-sub.xyz, port: 1206, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 香港中继7, server: hk07.dns.meo-sub.xyz, port: 1207, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 香港中继8, server: hk08.dns.meo-sub.xyz, port: 1208, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hk08.dns.meo-sub.xyz}}
+  - {name: 日本中继1, server: jp01.dns.meo-sub.xyz, port: 1211, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 日本中继2, server: jp02.dns.meo-sub.xyz, port: 1212, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 日本中继3, server: jp03.dns.meo-sub.xyz, port: 1213, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 日本中继4, server: jp04.dns.meo-sub.xyz, port: 1214, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 美国中继1, server: us01.dns.meo-sub.xyz, port: 1231, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 美国中继2, server: us02.dns.meo-sub.xyz, port: 1232, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 美国中继3, server: us03.dns.meo-sub.xyz, port: 1233, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 美国中继4, server: us04.dns.meo-sub.xyz, port: 1234, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 美国中继5, server: us05.dns.meo-sub.xyz, port: 1235, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 美国中继6, server: us06.dns.meo-sub.xyz, port: 1236, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 美国中继7, server: us07.dns.meo-sub.xyz, port: 1237, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 美国中继8, server: us08.dns.meo-sub.xyz, port: 1238, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 新加坡中继1, server: sg01.dns.meo-sub.xyz, port: 1241, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 新加坡中继2, server: sg02.dns.meo-sub.xyz, port: 1242, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 台湾中继1, server: tw01.dns.meo-sub.xyz, port: 1261, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 台湾中继2, server: tw02.dns.meo-sub.xyz, port: 1262, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 台湾中继3, server: tw03.dns.meo-sub.xyz, port: 1263, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 台湾中继4, server: tw04.dns.meo-sub.xyz, port: 1264, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 台湾中继5, server: tw05.dns.meo-sub.xyz, port: 1265, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 台湾中继6, server: tw05.dns.meo-sub.xyz, port: 1266, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 韩国中继1, server: kr01.dns.meo-sub.xyz, port: 1251, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 韩国中继2, server: kr02.dns.meo-sub.xyz, port: 1252, type: vmess, uuid: bc282fce-50e4-4035-bb1b-8d2bb731669e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
