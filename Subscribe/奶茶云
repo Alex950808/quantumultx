@@ -21,3 +21,4 @@ proxies:
   - {name: 新加坡04丨解锁丨华南隧道, server: gy.naigai.one, port: 30011, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: sg04.naigai.one, skip-cert-verify: false}
   - {name: 新加坡05丨解锁丨华南隧道, server: gy.naigai.one, port: 30012, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: sg05.naigai.one, skip-cert-verify: false}
   - {name: 俄罗斯01丨解锁丨直连线路, server: ru01.naigai.one, port: 443, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: ru01.naigai.one, skip-cert-verify: false}
+
