@@ -89,3 +89,4 @@ proxies:
   - {name: "越南 - 胡志明市 [BGPA] [SVIP]", server: 122.9.62.52, port: 2891, type: ss, cipher: chacha20-ietf-poly1305, password: 02c44a21ee3363610920f4d68dbb9421e6a38c37ef9ab4cd3cf66f5409893e62}
   - {name: "日本 - 东京 - 1 [IPLC] [游戏代理] [禁视频]", server: 42.157.160.106, port: 11671, type: ss, cipher: chacha20-ietf-poly1305, password: e22adfb4c68d1812c44926e63a89ab76d5d953d51d03507615d6021059952a46}
   - {name: "日本 - 东京 - 3 [IPLC] [游戏代理] [禁视频]", server: 42.157.160.106, port: 11631, type: ss, cipher: chacha20-ietf-poly1305, password: 82a5dd9a8f044c02d70afb4c68f8376138449d149f66ace2068a16c06502ae41}
+
