@@ -1,0 +1,54 @@
+proxies:
+  - {name: 🇷🇺 俄罗斯 01, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30000, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇨🇦 加拿大 01, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇮🇳 印度 01, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇹🇼 台湾 01, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30003, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇹🇼 台湾 02, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30004, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇹🇼 台湾 03, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30005, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇹🇼 台湾 04, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30006, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇹🇼 台湾 05, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30007, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇩🇪 德国 01, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30038, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇦🇺 悉尼 01, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30035, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇸🇬 新加坡 01, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30008, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇸🇬 新加坡 02, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30009, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇸🇬 新加坡 03, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30010, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇸🇬 新加坡 04, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30011, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇸🇬 新加坡 05, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30012, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇸🇬 新加坡 06, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30013, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇯🇵 日本 01, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30016, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇯🇵 日本 02, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30017, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇯🇵 日本 03, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30018, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇯🇵 日本 04, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30019, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇯🇵 日本 05, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30020, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇯🇵 日本 06, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30021, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇹🇭 泰国 01, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30039, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇺🇸 美国 01, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30022, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇺🇸 美国 02, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30023, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇺🇸 美国 03, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30024, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇺🇸 美国 04, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30025, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇺🇸 美国 05, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30026, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇺🇸 美国 06, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30027, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇺🇸 美国 07, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30028, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇺🇸 美国 08, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30029, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇺🇸 美国 09, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30030, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇺🇸 美国 10, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30031, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇬🇧 英国 01, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30034, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇵🇭 菲律宾 01, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30014, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇻🇳 越南 01, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30015, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇦🇷 阿根廷 01, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30033, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇰🇷 韩国 01, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 23581, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇰🇷 韩国 02, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 23582, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇰🇷 韩国 03, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 23583, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇭🇰 香港 01, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 23567, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇭🇰 香港 02, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 23568, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇭🇰 香港 03, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 23575, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇭🇰 香港 04, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 23570, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇭🇰 香港 05, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 23576, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇭🇰 香港 06, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 23572, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇭🇰 香港 07, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 23573, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇭🇰 香港 08, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 23574, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇭🇰 香港 HGC 01, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 23577, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇭🇰 香港 HKT 01, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 23578, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇭🇰 香港 HKT 02, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 23579, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇭🇰 香港 HKT 03, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 23580, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
+  - {name: 🇲🇾 马来西亚 01, server: wc.3cdsgfhgfjghjghujdfds.2380.in, port: 30036, type: ss, cipher: chacha20-ietf-poly1305, password: T9MTTc}
