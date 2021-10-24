@@ -55,7 +55,8 @@ var avatar=document.querySelector(".item img")
 var footer=document.querySelector("div.is-size-7")
 footer.innerHTML="VPS监控面板"
 footer.style.visibility="visible"
-avatar.src="https://ii.do/favicon.ico"
+//avatar.src="https://ii.do/favicon.ico"
+avatar.src="/static/logo.svg?v20210804"
 avatar.style.visibility="visible"
 }
 </script>
