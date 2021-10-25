@@ -11,7 +11,8 @@ body {
     background-position: top !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    background-image: url(https://raw.githubusercontent.com/Alex950808/quantumultx/master/images/9bd9b167ly1fwsfe14njgj21hc0u07tf.jpg) !important;
+    /*background-image: url(https://raw.githubusercontent.com/Alex950808/quantumultx/master/images/9bd9b167ly1fwsfe14njgj21hc0u07tf.jpg) !important;*/    
+    background-image: url(https://z3.ax1x.com/2021/10/25/5hQGLT.jpg) !important;
     font-family: Arial,Helvetica,sans-serif !important;
 }
 /* 导航栏 */
@@ -55,7 +56,8 @@ var footer=document.querySelector("div.is-size-7")
 footer.innerHTML="VPS监控面板"
 footer.style.visibility="visible"
 //avatar.src="https://ii.do/favicon.ico"
-avatar.src="/static/logo.svg?v20210804"
+//avatar.src="/static/logo.svg?v20210804"
+avatar.src="https://z3.ax1x.com/2021/10/25/5hlhEF.gif"
 avatar.style.visibility="visible"
 }
 </script>
