@@ -12,8 +12,9 @@ body {
     background-repeat: no-repeat !important;
     background-size: cover !important;
     /*background-image: url(https://raw.githubusercontent.com/Alex950808/quantumultx/master/images/9bd9b167ly1fwsfe14njgj21hc0u07tf.jpg) !important;*/    
-    /*background-image: url(https://z3.ax1x.com/2021/10/25/5hQGLT.jpg) !important;*/
-    background-image: linear-gradient(to top, #b224ef 0%, #7579ff 100%) !important;
+    /*background-image: url(https://z3.ax1x.com/2021/10/25/5hQGLT.jpg) !important;*/ 
+    /*background-image: linear-gradient(to top, #b224ef 0%, #7579ff 70%) !important;*/
+    background-image: url(https://z3.ax1x.com/2021/11/05/IusGex.jpg) !important;
     font-family: Arial,Helvetica,sans-serif !important;
 }
 /* 导航栏 */
