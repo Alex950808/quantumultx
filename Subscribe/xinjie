@@ -1,3 +1,5 @@
+#https://www.freewhale.live/user   https://sub.qiduo.eu.org/link/GvQpuwcDJagWcDKl?mu=1
+#「自由鲸」，FreeWahle，原「心阶云 XinjieCloud 心阶」
 proxies:
     - {"name":"AA-V2ray-HK-HGC","type":"vmess","server":"cdn-cn.nekocloud.cn","port":19083,"uuid":"b1f64afe-67ae-3b44-bcb3-5ff2bc913170","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/dahjwuh","ws-headers":{"Host":"cdn-cn.nekocloud.cn"}}
     - {"name":"AA-V2ray-HK-HKBN","type":"vmess","server":"cdn-cn.nekocloud.cn","port":19085,"uuid":"b1f64afe-67ae-3b44-bcb3-5ff2bc913170","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/dahjwuh","ws-headers":{"Host":"cdn-cn.nekocloud.cn"}}
