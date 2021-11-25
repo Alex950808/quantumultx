@@ -1,4 +1,0 @@
-proxies:
-- {name: 🇹🇼 台湾 IEPL2, server: tw11.clashcloud.tech, port: 49815, type: ssr, cipher: rc4-md5, password: 22140B, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-- {name: 🇹🇼 台湾 IPLC2, server: tw01.clashcloud.tech, port: 49815, type: ssr, cipher: rc4-md5, password: 22140B, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  
