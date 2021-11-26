@@ -1,23 +1,11 @@
+
 proxies:
-  - {name: 🇭🇰 香港01丨极速丨微软隧道, server: wr.naigai.one, port: 55790, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: hkzl.bot666.xyz, skip-cert-verify: false}
-  - {name: 🇭🇰 香港02丨极速丨微软隧道, server: hk06.bot666.xyz, port: 443, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: hk06.bot666.xyz, skip-cert-verify: false}
-  - {name: 🇭🇰 香港03丨高速丨微软隧道, server: wr.naigai.one, port: 9999, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: hk04.bot666.xyz, skip-cert-verify: false}
-  - {name: 🇭🇰 香港04丨极速丨微软隧道, server: wr.naigai.one, port: 9961, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: hk4.bot666.xyz, skip-cert-verify: false}
-  - {name: 🇭🇰 香港05丨极速丨微软隧道, server: wr2.naigai.one, port: 3338, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: hk5.bot666.xyz, skip-cert-verify: false}
-  - {name: 🇹🇼 台湾01丨解锁丨微软隧道, server: wr.naigai.one, port: 33897, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: tw01.bot666.xyz, skip-cert-verify: false}
-  - {name: 🇮🇳 印度01丨解锁丨微软隧道, server: wr.naigai.one, port: 30015, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: in01.bot666.xyz, skip-cert-verify: false}
-  - {name: 🇮🇳 印度02丨极速丨微软隧道, server: wr.naigai.one, port: 36556, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: in02.bot666.xyz, skip-cert-verify: false}
-  - {name: 🇺🇸 美国01丨解锁丨微软隧道, server: wr.naigai.one, port: 33894, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: us01.naigai.one, skip-cert-verify: false}
-  - {name: 🇺🇸 美国02丨极速丨微软隧道, server: wr.naigai.one, port: 36553, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: us02.bot666.xyz, skip-cert-verify: false}
-  - {name: 🇬🇧 英国01丨极速丨微软隧道, server: wr.naigai.one, port: 36554, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: uk01.bot666.xyz, skip-cert-verify: false}
-  - {name: 🇩🇪 德国01丨极速丨微软隧道, server: wr.naigai.one, port: 36555, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: de01.bot666.xyz, skip-cert-verify: false}
-  - {name: 🇯🇵 日本01丨高速丨微软隧道, server: wr2.naigai.one, port: 43897, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: jp07.naigai.one, skip-cert-verify: false}
-  - {name: 🇯🇵 日本02丨解锁丨微软隧道, server: wr2.naigai.one, port: 33896, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: jp03.naigai.one, skip-cert-verify: false}
-  - {name: 🇰🇷 韩国01丨解锁丨微软隧道, server: wr2.naigai.one, port: 33671, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: kr03.naigai.one, skip-cert-verify: false}
-  - {name: 🇳🇱 荷兰01丨极速丨微软隧道, server: wr2.naigai.one, port: 36558, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: hl.bot666.xyz, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡01丨解锁丨微软隧道, server: wr2.naigai.one, port: 33891, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: sg01.naigai.one, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡02丨解锁丨微软隧道, server: wr2.naigai.one, port: 30011, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: sg04.naigai.one, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡03丨解锁丨微软隧道, server: wr2.naigai.one, port: 30012, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: sg05.naigai.one, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡04丨极速丨微软隧道, server: wr2.naigai.one, port: 36551, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: sg04.bot666.xyz, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡05丨极速丨微软隧道, server: wr2.naigai.one, port: 36552, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: sg05.bot666.xyz, skip-cert-verify: false}
-  - {name: 🇨🇦 加拿大01丨极速丨微软隧道, server: wr2.naigai.one, port: 5559, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: jnd.bot666.xyz, skip-cert-verify: false}
+  - {name: 新加坡, server: sg11.naigai1.club, port: 443, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: sg11.naigai1.club, skip-cert-verify: false}
+  - {name: 新加坡 2, server: sg10.naigai1.club, port: 443, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: sg10.naigai1.club, skip-cert-verify: false}
+  - {name: 日本, server: jp04.naigai1.club, port: 443, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: jp04.naigai1.club, skip-cert-verify: false}
+  - {name: 日本 2, server: jp03.naigai1.club, port: 443, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: jp03.naigai1.club, skip-cert-verify: false}
+  - {name: 美国, server: us02.naigai1.club, port: 443, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: us02.naigai1.club, skip-cert-verify: false}
+  - {name: 美国 2, server: us03.naigai1.club, port: 443, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: us03.naigai1.club, skip-cert-verify: false}
+  - {name: 韩国, server: kr2.naigai1.club, port: 443, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: kr2.naigai1.club, skip-cert-verify: false}
+  - {name: 香港, server: hk10.naigai1.club, port: 8787, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: hk10.naigai1.club, skip-cert-verify: false}
+  - {name: 香港 2, server: hk01.naigai1.club, port: 443, type: trojan, password: bc9c2188-ecd7-475e-ac65-3bfbbacecf6c, sni: hk01.naigai1.club, skip-cert-verify: false}
