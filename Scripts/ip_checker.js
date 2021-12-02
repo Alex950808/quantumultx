@@ -41,5 +41,5 @@ var emoji = flags.get(obj['country'])? flags.get(obj['country']):"🏴‍☠️"
 var title =  emoji +'『'+ City_ValidCheck(obj['regionName'])+'』';
 var subtitle =  "💋 "+ ISP_ValidCheck(obj['isp']) + " ➠ "+ obj['country'];
 var ip = obj['query']; 
-var description = '国家:' + obj['country'] + '\n城市:' + obj['city'] + '\nIP:' + obj['query'] + '\n服务商:'+obj['isp'] + '\n数据中心:' + obj['org'] +'\n时区:'+ obj['timezone'] + '\n定位: [' +obj['lat'] + ',' + obj['lon'] + ']';
+var description = '国家:' + obj['country'] + '\n城市:' + obj['city'] + '\nIP:' + obj['query'] +'\n时区:'+ obj['timezone'] + '\n定位: [' +obj['lat'] + ',' + obj['lon'] + ']' + '\n服务商:'+obj['isp'] + '\n数据中心:' + obj['org'];
 $done({title, subtitle, ip, description});
