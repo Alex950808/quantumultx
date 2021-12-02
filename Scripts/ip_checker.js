@@ -10,20 +10,6 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
 
-function City_ValidCheck(para) {
-  if(para) {
-    if (para.length<6) {
-      return para
-    } else {
-      return para.slice(0,5)
-    }
-  
-  } else
-  {
-    return city0
-  }
-}
-
 function ISP_ValidCheck(para) {
   if(para) {
     return para
@@ -38,7 +24,7 @@ var flags = new Map([  [ "巴基斯坦" , "🇵🇰" ] ,[ "乌克兰" , "🇺�
 var body = $response.body;
 var obj = JSON.parse(body);
 var emoji = flags.get(obj['country'])? flags.get(obj['country']):"🏴‍☠️"
-var title =  emoji +'『'+ City_ValidCheck(obj['regionName'])+'』';
+var title =  emoji +'『'+ obj['city'] + '』';
 var subtitle =  "💋 "+ ISP_ValidCheck(obj['isp']) + " ➠ "+ obj['country'];
 var ip = obj['query']; 
 var description = '国家:' + obj['country'] + '\n城市:' + obj['city'] + '\nIP:' + obj['query'] +'\n时区:'+ obj['timezone'] + '\n定位: [' +obj['lat'] + ',' + obj['lon'] + ']' + '\n服务商:'+obj['isp'] + '\n数据中心:' + obj['org'];
