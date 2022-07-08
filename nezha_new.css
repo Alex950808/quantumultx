@@ -1,0 +1,66 @@
+<style>
+/* 背景图片 */
+body {
+    content: " " !important;
+    background: fixed !important;
+    z-index: -1 !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    background-position: top !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /*background-image: url(https://z3.ax1x.com/2021/10/25/5hQGLT.jpg) !important;*/    
+    /*background-image: linear-gradient(to top, #b224ef 0%, #7579ff 70%) !important;*/
+    /*background-image: url(https://z3.ax1x.com/2021/11/05/IusGex.jpg) !important;*/
+    background-image: url(https://ou1.fun/images/2022/04/18/2.jpg) !important;
+    font-family: Arial,Helvetica,sans-serif !important;
+}
+/* 导航栏 */
+.ui.large.menu {
+    border: 0 !important;
+    border-radius: 0px !important;
+    background-color: rgba(255, 255, 255, 55%) !important;
+}
+/* 大卡片 */
+#app .ui.fluid.accordion {
+    background-color: #fbfbfb26 !important;
+    border-radius: 0.4rem !important;
+}
+/* 小卡片 */
+.ui.four.cards>.card {
+    border-radius: 0.6rem !important;
+    background-color: #fafafaa3 !important;
+}
+/* 弹出卡片 */
+.status.cards .ui.content.popup {
+    border-radius: 5px !important;
+    border: 1px solid transparent !important;
+    background-color: #fafafaeb !important;
+}
+/* 服务页 */
+.ui.table {
+    background: RGB(225,225,225,0.6) !important;
+}
+/* 版权 */
+.ui.inverted.segment, .ui.primary.inverted.segment {
+    color: #000 !important;
+    font-weight: bold !important;
+    background-color: #fafafaa3 !important;
+}
+</style>
+<!--Logo和版权-->
+<script>
+window.onload = function(){
+var avatar=document.querySelector(".item img")
+var footer=document.querySelector("div.is-size-7")
+footer.innerHTML="VPS探针"
+footer.style.visibility="visible"
+//avatar.src="https://ii.do/favicon.ico"
+//avatar.src="/static/logo.svg?v20210804"
+avatar.src="https://z3.ax1x.com/2021/10/25/5hlhEF.gif"
+avatar.style.visibility="visible"
+}
+</script>
+<script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>
