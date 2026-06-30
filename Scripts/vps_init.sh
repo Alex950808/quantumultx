@@ -1526,9 +1526,11 @@ main() {
                 ;;
             7)
                 docker_manage
+                continue
                 ;;
             8)
                 kernel_tuning_menu
+                continue
                 ;;
             9)
                 cleanup_services
