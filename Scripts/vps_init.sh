@@ -1269,20 +1269,27 @@ docker_manage() {
         v_count=$(docker volume ls -q 2>/dev/null | wc -l)
 
         echo -e "${BLUE}"
-        echo "╔══════════════════════════════════════════════════╗"
-        echo "║              🐳  Docker 管理                     ║"
-        echo "╚══════════════════════════════════════════════════╝"
+        echo "  ╔══════════════════════════════════════════════════╗"
+        echo "  ║              🐳  Docker 管理                     ║"
+        echo "  ╚══════════════════════════════════════════════════╝"
         echo -e "${NC}"
         echo -e "  容器:${c_count}  镜像:${i_count}  网络:${n_count}  卷:${v_count}"
         echo -e "${CYAN}──────────────────────────────────────────────────${NC}"
-        echo -e "  ${GREEN}1${NC}. 容器列表         ${GREEN}2${NC}. 镜像列表"
-        echo -e "  ${GREEN}3${NC}. 容器操作         ${GREEN}4${NC}. 镜像操作"
-        echo -e "  ${GREEN}5${NC}. 全局状态         ${GREEN}6${NC}. 清理无用资源"
-        echo -e "  ${GREEN}8${NC}. 更换Docker源      ${GREEN}9${NC}. 编辑daemon.json"
-        echo -e "  ${GREEN}11${NC}. 开启IPv6访问     ${GREEN}12${NC}. 关闭IPv6访问"
-        echo -e "  ${RED}7${NC}. 卸载 Docker       ${GREEN}0${NC}. 返回"
+        echo -e "  ${GREEN} 1${NC}  容器列表"
+        echo -e "  ${GREEN} 2${NC}  镜像列表"
+        echo -e "  ${GREEN} 3${NC}  容器操作"
+        echo -e "  ${GREEN} 4${NC}  镜像操作"
+        echo -e "  ${GREEN} 5${NC}  全局状态"
+        echo -e "  ${GREEN} 6${NC}  清理无用资源"
+        echo -e "  ${RED} 7${NC}  卸载 Docker"
+        echo -e "  ${GREEN} 8${NC}  更换Docker源"
+        echo -e "  ${GREEN} 9${NC}  编辑daemon.json"
+        echo -e "  ${GREEN}11${NC}  开启IPv6访问"
+        echo -e "  ${GREEN}12${NC}  关闭IPv6访问"
         echo -e "${CYAN}──────────────────────────────────────────────────${NC}"
-        read -rp "$(echo -e "${BOLD}请输入选项: ${NC}")" sub
+        echo -e "  ${RED}0${NC}  返回主菜单"
+        echo ""
+        read -rp "$(echo -e "  ${BOLD}▸ 请输入选项: ${NC}")" sub
 
         case $sub in
             1)
@@ -1390,9 +1397,9 @@ kernel_tuning_menu() {
         clear 2>/dev/null || true
         echo ""
         echo -e "${BLUE}"
-        echo "╔══════════════════════════════════════════════════╗"
-        echo "║               智能内核调优                        ║"
-        echo "╚══════════════════════════════════════════════════╝"
+        echo "  ╔══════════════════════════════════════════════════╗"
+        echo "  ║               智能内核调优                        ║"
+        echo "  ╚══════════════════════════════════════════════════╝"
         echo -e "${NC}"
         echo -e "${CYAN}──────────────────────────────────────────────────${NC}"
         echo -e "  ${CYAN}1${NC}  自动检测并优化"
@@ -1462,15 +1469,20 @@ main() {
         echo ""
 
         # ── 功能菜单 ──
-        echo -e "  ${BLUE}├─${NC} ${CYAN}1${NC}  查看系统详情      ${BLUE}├─${NC} ${CYAN}7${NC}  Docker 管理"
-        echo -e "  ${BLUE}├─${NC} ${CYAN}2${NC}  时区设置          ${BLUE}├─${NC} ${CYAN}8${NC}  智能内核调优"
-        echo -e "  ${BLUE}├─${NC} ${CYAN}3${NC}  系统更新          ${BLUE}├─${NC} ${CYAN}9${NC}  服务精简"
-        echo -e "  ${BLUE}├─${NC} ${CYAN}4${NC}  安装常用工具      ${BLUE}├─${NC} ${CYAN}10${NC} 系统垃圾清理"
-        echo -e "  ${BLUE}├─${NC} ${CYAN}5${NC}  BBR 管理          ${BLUE}├─${NC} ${CYAN}11${NC} NodeQuality测试"
-        echo -e "  ${BLUE}├─${NC} ${CYAN}6${NC}  Swap 配置"
+        echo -e "  ${CYAN} 1${NC}  查看系统详情"
+        echo -e "  ${CYAN} 2${NC}  时区设置"
+        echo -e "  ${CYAN} 3${NC}  系统更新"
+        echo -e "  ${CYAN} 4${NC}  安装常用工具"
+        echo -e "  ${CYAN} 5${NC}  BBR 管理"
+        echo -e "  ${CYAN} 6${NC}  Swap 配置"
+        echo -e "  ${CYAN} 7${NC}  Docker 管理"
+        echo -e "  ${CYAN} 8${NC}  智能内核调优"
+        echo -e "  ${CYAN} 9${NC}  服务精简"
+        echo -e "  ${CYAN}10${NC}  系统垃圾清理"
+        echo -e "  ${CYAN}11${NC}  NodeQuality测试"
 
         echo -e "  ${BLUE}─────────────────────────────────────────────────────────${NC}"
-        echo -e "  ${YELLOW}A${NC}  一键自动优化      ${RED}0${NC}  退出脚本"
+        echo -e "   ${YELLOW}A${NC}  一键自动优化      ${RED}0${NC}  退出脚本"
         echo ""
 
         local choice
