@@ -1354,6 +1354,8 @@ docker_manage() {
                 docker image prune -f 2>/dev/null || true
                 log_info "清理无用网络..."
                 docker network prune -f 2>/dev/null || true
+                log_info "清理未使用卷..."
+                docker volume prune -f 2>/dev/null || true
                 log_info "清理完成!"
                 echo ""
                 read -rp "按回车继续..."
@@ -1449,23 +1451,22 @@ main() {
         swap_status=$(free -h | awk 'NR==3{if($2+0==0) print "未配置"; else print $2}')
         tz=$(timedatectl 2>/dev/null | grep "Time zone" | awk '{print $3}' || echo "N/A")
         if sysctl -n net.ipv4.tcp_congestion_control 2>/dev/null | grep -q bbr; then
-            bbr_status="${GREEN}BBR✓${NC}"
+            bbr_status="${GREEN}已启用${NC}"
         else
-            bbr_status="${RED}BBR✗${NC}"
+            bbr_status="${RED}未启用${NC}"
         fi
 
         echo ""
-        echo -e "${BLUE}"
-        echo "╔══════════════════════════════════════════════════╗"
-        echo "║                                                  ║"
-        echo "║           🚀  VPS 初始化工具 v1.0                 ║"
-        echo "║                                                  ║"
-        echo "╚══════════════════════════════════════════════════╝"
-        echo -e "${NC}"
-
-        log_info "系统: $(grep PRETTY_NAME /etc/os-release 2>/dev/null | cut -d '=' -f2 | tr -d '"') | 架构: $(uname -m) | 内核: $(uname -r | cut -d- -f1)"
-        log_info "内存: ${mem_usage} | Swap: ${swap_status} | 磁盘: $(df -h / | awk 'NR==2{print $4}') 可用"
-        log_info "时区: ${tz} | ${bbr_status}"
+        echo -e "${CYAN}  ════════════════════════════════════════════════════════${NC}"
+        echo -e "       ${BOLD}${GREEN}🚀  VPS 初始化工具${NC}  ${YELLOW}v1.0${NC}"
+        echo ""
+        echo -e "  ${CYAN}系统${NC}  $(grep PRETTY_NAME /etc/os-release 2>/dev/null | cut -d '=' -f2 | tr -d '"')"
+        echo -e "  ${CYAN}架构${NC}  $(uname -m)  ${CYAN}内核${NC}  $(uname -r | cut -d- -f1)"
+        echo -e "  ${CYAN}内存${NC}  ${mem_usage}  ${CYAN}Swap${NC}  ${swap_status}"
+        echo -e "  ${CYAN}磁盘${NC}  $(df -h / | awk 'NR==2{print $4}') 可用"
+        echo -e "  ${CYAN}时区${NC}  ${tz}"
+        echo -e "  ${CYAN}BBR${NC}  ${bbr_status}"
+        echo -e "${CYAN}  ════════════════════════════════════════════════════════${NC}"
         echo ""
 
         # ── 功能菜单 ──
