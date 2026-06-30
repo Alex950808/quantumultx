@@ -1269,11 +1269,11 @@ docker_manage() {
         v_count=$(docker volume ls -q 2>/dev/null | wc -l)
 
         echo ""
-        echo -e "${CYAN}  ════════════════════════════════════════════════════════${NC}"
+        echo -e "${CYAN}✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦${NC}"
         echo -e "       ${BOLD}${GREEN}🐳  Docker 管理${NC}"
         echo ""
         echo -e "  容器:${c_count}  镜像:${i_count}  网络:${n_count}  卷:${v_count}"
-        echo -e "${CYAN}  ════════════════════════════════════════════════════════${NC}"
+        echo -e "${CYAN}✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦${NC}"
         echo -e "${CYAN}──────────────────────────────────────────────────${NC}"
         echo -e "  ${GREEN} 1${NC}  容器列表"
         echo -e "  ${GREEN} 2${NC}  镜像列表"
@@ -1398,9 +1398,9 @@ kernel_tuning_menu() {
     while true; do
         clear 2>/dev/null || true
         echo ""
-        echo -e "${CYAN}  ════════════════════════════════════════════════════════${NC}"
+        echo -e "${CYAN}✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦${NC}"
         echo -e "       ${BOLD}${GREEN}🔧  智能内核调优${NC}"
-        echo -e "${CYAN}  ════════════════════════════════════════════════════════${NC}"
+        echo -e "${CYAN}✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦${NC}"
         echo ""
         echo -e "${CYAN}──────────────────────────────────────────────────${NC}"
         echo -e "  ${CYAN}1${NC}  自动检测并优化"
@@ -1456,7 +1456,7 @@ main() {
         fi
 
         echo ""
-        echo -e "${CYAN}  ════════════════════════════════════════════════════════${NC}"
+        echo -e "${CYAN}✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦${NC}"
         echo -e "       ${BOLD}${GREEN}🚀  VPS 初始化工具${NC}  ${YELLOW}v1.0${NC}"
         echo ""
         echo -e "  ${CYAN}系统${NC}  $(grep PRETTY_NAME /etc/os-release 2>/dev/null | cut -d '=' -f2 | tr -d '"')"
@@ -1465,7 +1465,7 @@ main() {
         echo -e "  ${CYAN}磁盘${NC}  $(df -h / | awk 'NR==2{print $4}') 可用"
         echo -e "  ${CYAN}时区${NC}  ${tz}"
         echo -e "  ${CYAN}BBR${NC}  ${bbr_status}"
-        echo -e "${CYAN}  ════════════════════════════════════════════════════════${NC}"
+        echo -e "${CYAN}✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦${NC}"
         echo ""
 
         # ── 功能菜单 ──
