@@ -974,9 +974,7 @@ docker_ipv6_on() {
         cat > "$CONFIG_FILE" <<'EOF'
 {
   "ipv6": true,
-  "fixed-cidr-v6": "2001:db8:1::/64",
-  "experimental": true,
-  "ip6tables": true
+  "fixed-cidr-v6": "2001:db8:1::/64"
 }
 EOF
         log_info "已创建 daemon.json 并开启 IPv6"
