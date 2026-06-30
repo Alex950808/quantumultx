@@ -713,7 +713,7 @@ set_timezone() {
 cleanup_services() {
     log_step "服务清理"
     log_info "清理不必要的服务..."
-    local services=("avahi-daemon" "cups")
+    local services=("avahi-daemon" "cups" "exim4" "getty@tty1" "serial-getty@ttyS0")
     for svc in "${services[@]}"; do
         if systemctl is-active --quiet "$svc" 2>/dev/null; then
             systemctl stop "$svc" 2>/dev/null || true
@@ -1120,37 +1120,14 @@ restore_network_defaults() {
 }
 
 # =============================================================================
-# 12. 优化摘要
-# =============================================================================
-print_summary() {
-    echo -e "\n${MAGENTA}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-    echo -e "${BOLD}  优化摘要${NC}"
-    echo -e "${MAGENTA}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-    printf "  %-20s ${GREEN}%s${NC}\n" "拥塞控制:" "$(sysctl_get net.ipv4.tcp_congestion_control)"
-    printf "  %-20s ${GREEN}%s${NC}\n" "队列调度:" "$(sysctl_get net.core.default_qdisc)"
-    printf "  %-20s ${GREEN}%s${NC}\n" "文件描述符:" "$(sysctl_get fs.file-max)"
-    printf "  %-20s ${GREEN}%s${NC}\n" "somaxconn:" "$(sysctl_get net.core.somaxconn)"
-    printf "  %-20s ${GREEN}%s${NC}\n" "快速打开:" "$(sysctl_get net.ipv4.tcp_fastopen)"
-    echo -e "${MAGENTA}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-    echo ""
-    echo -e "${GREEN}╔══════════════════════════════════════════════════╗${NC}"
-    echo -e "${GREEN}║        ✅  VPS 初始化全部完成!                    ║${NC}"
-    echo -e "${GREEN}║  建议执行 reboot 重启使所有配置生效                ║${NC}"
-    echo -e "${GREEN}╚══════════════════════════════════════════════════╝${NC}"
-    echo ""
-}
-
-# =============================================================================
-# 13. 系统信息展示 (IP / 系统 / 硬件)
+# 12. 系统信息展示 (IP / 系统 / 硬件)
 # =============================================================================
 show_system_info() {
     clear 2>/dev/null || true
 
-    echo -e "${BLUE}"
-    echo "╔══════════════════════════════════════════════════╗"
-    echo "║                 📊  VPS 系统信息                 ║"
-    echo "╚══════════════════════════════════════════════════╝"
-    echo -e "${NC}"
+    echo -e "${CYAN}✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦${NC}"
+    echo -e "       ${BOLD}${GREEN}📊  VPS 系统信息${NC}"
+    echo -e "${CYAN}✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦${NC}"
 
     # ── IP 信息 ──
     log_step "IP 信息"
@@ -1249,7 +1226,7 @@ show_system_info() {
 }
 
 # =============================================================================
-# 14. Docker 管理
+# 13. Docker 管理
 # =============================================================================
 docker_manage() {
     if ! command -v docker &>/dev/null; then
@@ -1287,7 +1264,7 @@ docker_manage() {
         echo -e "  ${GREEN} 9${NC}  编辑daemon.json"
         echo -e "  ${GREEN}11${NC}  开启IPv6访问"
         echo -e "  ${GREEN}12${NC}  关闭IPv6访问"
-        echo -e "  ${CYAN}──────────────────────────────────────────────────${NC}"
+        echo -e "${CYAN}──────────────────────────────────────────────────${NC}"
         echo -e "  ${RED} 0${NC}  返回主菜单"
         echo ""
         local sub
@@ -1407,7 +1384,7 @@ kernel_tuning_menu() {
         echo -e "  ${CYAN}1${NC}  自动检测并优化"
         echo -e "  ${CYAN}2${NC}  当前网络内核参数"
         echo -e "  ${CYAN}3${NC}  回滚优化设置"
-        echo -e "  ${CYAN}──────────────────────────────────────────────────${NC}"
+        echo -e "${CYAN}──────────────────────────────────────────────────${NC}"
         echo -e "  ${RED}0${NC}  返回主菜单"
         echo ""
         local sub
@@ -1461,8 +1438,10 @@ main() {
         echo -e "       ${BOLD}${GREEN}🚀  VPS 初始化工具${NC}  ${YELLOW}v1.0${NC}"
         echo ""
         echo -e "  ${CYAN}系统${NC}  $(grep PRETTY_NAME /etc/os-release 2>/dev/null | cut -d '=' -f2 | tr -d '"')"
-        echo -e "  ${CYAN}架构${NC}  $(uname -m)  ${CYAN}内核${NC}  $(uname -r | cut -d- -f1)"
-        echo -e "  ${CYAN}内存${NC}  ${mem_usage}  ${CYAN}Swap${NC}  ${swap_status}"
+        echo -e "  ${CYAN}架构${NC}  $(uname -m)"
+        echo -e "  ${CYAN}内核${NC}  $(uname -r | cut -d- -f1)"
+        echo -e "  ${CYAN}内存${NC}  ${mem_usage}"
+        echo -e "  ${CYAN}Swap${NC}  ${swap_status}"
         echo -e "  ${CYAN}磁盘${NC}  $(df -h / | awk 'NR==2{print $4}') 可用"
         echo -e "  ${CYAN}时区${NC}  ${tz}"
         echo -e "  ${CYAN}BBR${NC}  ${bbr_status}"
@@ -1482,7 +1461,7 @@ main() {
         echo -e "  ${CYAN}10${NC}  系统垃圾清理"
         echo -e "  ${CYAN}11${NC}  NodeQuality测试"
 
-        echo -e "  ${BLUE}─────────────────────────────────────────────────────────${NC}"
+        echo -e "${BLUE}─────────────────────────────────────────────────────────${NC}"
         echo -e "   ${YELLOW}A${NC}  一键自动优化      ${RED}0${NC}  退出脚本"
         echo ""
 
@@ -1555,7 +1534,6 @@ main() {
                 cleanup_services
                 linux_clean
                 echo ""
-                print_summary
                 log_info "全部完成! 按回车返回菜单..."
                 read -r
                 ;;     
