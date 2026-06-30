@@ -937,14 +937,14 @@ docker_edit_daemon() {
         echo '{}' > /etc/docker/daemon.json
     fi
 
-    # 尝试使用 nano，不可用则用 vim，都不行则用 cat 查看
+    # 优先 vim，不可用则 nano，都不行则 cat 查看
     local editor=""
-    if command -v nano &>/dev/null; then
-        editor="nano"
-    elif command -v vim &>/dev/null; then
+    if command -v vim &>/dev/null; then
         editor="vim"
+    elif command -v nano &>/dev/null; then
+        editor="nano"
     else
-        log_warn "未找到 nano/vim，当前配置内容如下："
+        log_warn "未找到 vim/nano，当前配置内容如下："
         cat /etc/docker/daemon.json
         log_info "请手动编辑: /etc/docker/daemon.json"
         return 0
@@ -1268,12 +1268,12 @@ docker_manage() {
         n_count=$(docker network ls -q 2>/dev/null | wc -l)
         v_count=$(docker volume ls -q 2>/dev/null | wc -l)
 
-        echo -e "${BLUE}"
-        echo "  ╔══════════════════════════════════════════════════╗"
-        echo "  ║              🐳  Docker 管理                     ║"
-        echo "  ╚══════════════════════════════════════════════════╝"
-        echo -e "${NC}"
+        echo ""
+        echo -e "${CYAN}  ════════════════════════════════════════════════════════${NC}"
+        echo -e "       ${BOLD}${GREEN}🐳  Docker 管理${NC}"
+        echo ""
         echo -e "  容器:${c_count}  镜像:${i_count}  网络:${n_count}  卷:${v_count}"
+        echo -e "${CYAN}  ════════════════════════════════════════════════════════${NC}"
         echo -e "${CYAN}──────────────────────────────────────────────────${NC}"
         echo -e "  ${GREEN} 1${NC}  容器列表"
         echo -e "  ${GREEN} 2${NC}  镜像列表"
@@ -1287,7 +1287,7 @@ docker_manage() {
         echo -e "  ${GREEN}11${NC}  开启IPv6访问"
         echo -e "  ${GREEN}12${NC}  关闭IPv6访问"
         echo -e "${CYAN}──────────────────────────────────────────────────${NC}"
-        echo -e "  ${RED}0${NC}  返回主菜单"
+        echo -e "  ${RED} 0${NC}  返回主菜单"
         echo ""
         read -rp "$(echo -e "  ${BOLD}▸ 请输入选项: ${NC}")" sub
 
@@ -1398,11 +1398,10 @@ kernel_tuning_menu() {
     while true; do
         clear 2>/dev/null || true
         echo ""
-        echo -e "${BLUE}"
-        echo "  ╔══════════════════════════════════════════════════╗"
-        echo "  ║               智能内核调优                        ║"
-        echo "  ╚══════════════════════════════════════════════════╝"
-        echo -e "${NC}"
+        echo -e "${CYAN}  ════════════════════════════════════════════════════════${NC}"
+        echo -e "       ${BOLD}${GREEN}🔧  智能内核调优${NC}"
+        echo -e "${CYAN}  ════════════════════════════════════════════════════════${NC}"
+        echo ""
         echo -e "${CYAN}──────────────────────────────────────────────────${NC}"
         echo -e "  ${CYAN}1${NC}  自动检测并优化"
         echo -e "  ${CYAN}2${NC}  当前网络内核参数"
