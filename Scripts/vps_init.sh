@@ -1273,8 +1273,9 @@ docker_manage() {
         echo -e "       ${BOLD}${GREEN}🐳  Docker 管理${NC}"
         echo ""
         echo -e "  容器:${c_count}  镜像:${i_count}  网络:${n_count}  卷:${v_count}"
+        echo ""
         echo -e "${CYAN}✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦${NC}"
-        echo -e "${CYAN}──────────────────────────────────────────────────${NC}"
+        echo ""
         echo -e "  ${GREEN} 1${NC}  容器列表"
         echo -e "  ${GREEN} 2${NC}  镜像列表"
         echo -e "  ${GREEN} 3${NC}  容器操作"
@@ -1286,9 +1287,10 @@ docker_manage() {
         echo -e "  ${GREEN} 9${NC}  编辑daemon.json"
         echo -e "  ${GREEN}11${NC}  开启IPv6访问"
         echo -e "  ${GREEN}12${NC}  关闭IPv6访问"
-        echo -e "${CYAN}──────────────────────────────────────────────────${NC}"
+        echo -e "  ${CYAN}──────────────────────────────────────────────────${NC}"
         echo -e "  ${RED} 0${NC}  返回主菜单"
         echo ""
+        local sub
         read -rp "$(echo -e "  ${BOLD}▸ 请输入选项: ${NC}")" sub
 
         case $sub in
@@ -1402,11 +1404,10 @@ kernel_tuning_menu() {
         echo -e "       ${BOLD}${GREEN}🔧  智能内核调优${NC}"
         echo -e "${CYAN}✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦ ─── ✦${NC}"
         echo ""
-        echo -e "${CYAN}──────────────────────────────────────────────────${NC}"
         echo -e "  ${CYAN}1${NC}  自动检测并优化"
         echo -e "  ${CYAN}2${NC}  当前网络内核参数"
         echo -e "  ${CYAN}3${NC}  回滚优化设置"
-        echo -e "${CYAN}──────────────────────────────────────────────────${NC}"
+        echo -e "  ${CYAN}──────────────────────────────────────────────────${NC}"
         echo -e "  ${RED}0${NC}  返回主菜单"
         echo ""
         local sub
