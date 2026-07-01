@@ -362,15 +362,6 @@ enable_bbr() {
     log_info "当前拥塞控制: ${current_cc}"
     log_info "可用算法: $(sysctl net.ipv4.tcp_available_congestion_control 2>/dev/null)"
 
-    # 加载模块
-    modprobe tcp_bbr 2>/dev/null || true
-
-    # 持久化 BBR 模块
-    if [ ! -f /etc/modules-load.d/bbr.conf ]; then
-        echo "tcp_bbr" > /etc/modules-load.d/bbr.conf
-        log_info "BBR 模块已持久化"
-    fi
-
     # 写入配置
     local bbr_conf="/etc/sysctl.d/99-bbr.conf"
     cat > "$bbr_conf" <<EOF
@@ -422,9 +413,6 @@ EOF
     # 清理 /etc/sysctl.conf 中的 BBR 相关配置
     sed -i '/^[[:space:]]*net\.core\.default_qdisc/d' /etc/sysctl.conf 2>/dev/null || true
     sed -i '/^[[:space:]]*net\.ipv4\.tcp_congestion_control/d' /etc/sysctl.conf 2>/dev/null || true
-
-    # 清理 BBR 模块持久化
-    rm -f /etc/modules-load.d/bbr.conf
 
     sysctl --system 2>/dev/null || true
     sleep 1
@@ -523,13 +511,13 @@ auto_kernel_optimize() {
         # ── 根据内存设定 VM 参数 ──
         local SWAPPINESS MIN_FREE_KB
         if [ "$MEM_MB" -ge 16384 ]; then
-            SWAPPINESS=5;   MIN_FREE_KB=131072
+            SWAPPINESS=5;
         elif [ "$MEM_MB" -ge 4096 ]; then
-            SWAPPINESS=10;  MIN_FREE_KB=65536
+            SWAPPINESS=10;
         elif [ "$MEM_MB" -ge 1024 ]; then
-            SWAPPINESS=20;  MIN_FREE_KB=32768
+            SWAPPINESS=20;
         else
-            SWAPPINESS=30;  MIN_FREE_KB=16384
+            SWAPPINESS=30;
         fi
 
         # ── 高延迟额外参数 ──
@@ -629,7 +617,6 @@ vm.swappiness = ${SWAPPINESS}
 vm.dirty_ratio = 15
 vm.dirty_background_ratio = 5
 vm.overcommit_memory = 1
-vm.min_free_kbytes = ${MIN_FREE_KB}
 vm.vfs_cache_pressure = 50
 
 # ── CPU/内核调度优化 ──
@@ -789,10 +776,10 @@ linux_clean() {
         return 1
     fi
 
-    # 清理 systemd 日志 (保留 500M)
+    # 清理 systemd 日志 (保留 50M)
     journalctl --rotate 2>/dev/null || true
     journalctl --vacuum-time=1s 2>/dev/null || true
-    journalctl --vacuum-size=500M 2>/dev/null || true
+    journalctl --vacuum-size=50M 2>/dev/null || true
 
     log_info "系统清理完成!"
 }
@@ -882,21 +869,21 @@ install_docker() {
             --ignore-backup-tips
     fi
 
-    # ── 配置 daemon.json（镜像加速） ──
+    # ── 配置 daemon.json（镜像加速 + 日志驱动） ──
     log_info "配置 Docker daemon..."
-    install_add_docker_cn
+    configure_docker_daemon
 
     log_info "Docker 状态: $(systemctl is-active docker 2>/dev/null || echo 'inactive')"
     docker --version 2>/dev/null || true
     docker compose version 2>/dev/null || true
 }
 
-# ── 配置国内 Docker 镜像加速 ──
-install_add_docker_cn() {
+# ── 配置 Docker daemon.json（镜像加速 + 日志驱动） ──
+configure_docker_daemon() {
     local country
     country=$(curl -s --max-time 3 ipinfo.io/country 2>/dev/null || echo "")
+    mkdir -p /etc/docker
     if [ "$country" = "CN" ]; then
-        mkdir -p /etc/docker
         cat > /etc/docker/daemon.json <<'DOCKEREOF'
 {
   "registry-mirrors": [
@@ -910,14 +897,32 @@ install_add_docker_cn() {
     "https://dockerproxy.cool",
     "https://docker.apiba.cn",
     "https://proxy.vvvv.ee"
-  ]
+  ],
+  "ipv6": false,
+  "fixed-cidr-v6": "2001:db8:1::/64",
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "2m",
+    "max-file": "3"
+  }
 }
 DOCKEREOF
-        log_info "已配置国内 Docker 镜像加速"
-        systemctl restart docker 2>/dev/null || true
+        log_info "已配置国内 Docker 镜像加速 + IPv6(禁用) + 日志驱动"
     else
-        log_info "非国内环境，无需配置镜像加速"
+        cat > /etc/docker/daemon.json <<'DOCKEREOF'
+{
+  "ipv6": false,
+  "fixed-cidr-v6": "2001:db8:1::/64",
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "2m",
+    "max-file": "3"
+  }
+}
+DOCKEREOF
+        log_info "已配置 Docker IPv6(禁用) + 日志驱动"
     fi
+    systemctl restart docker 2>/dev/null || true
 }
 
 # ── 更换 Docker 镜像源（调用 linuxmirrors 脚本） ──
@@ -974,7 +979,15 @@ docker_ipv6_on() {
         cat > "$CONFIG_FILE" <<'EOF'
 {
   "ipv6": true,
-  "fixed-cidr-v6": "2001:db8:1::/64"
+  "fixed-cidr-v6": "2001:db8:1::/64",
+  "experimental": true,
+  "ip6tables": true,
+
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "2m",
+    "max-file": "3"
+  }
 }
 EOF
         log_info "已创建 daemon.json 并开启 IPv6"
@@ -1454,7 +1467,7 @@ main() {
         echo -e "  ${CYAN} 5${NC}  BBR 管理"
         echo -e "  ${CYAN} 6${NC}  Swap 配置"
         echo -e "  ${CYAN} 7${NC}  Docker 管理"
-        echo -e "  ${CYAN} 8${NC}  智能内核调优"
+        # echo -e "  ${CYAN} 8${NC}  智能内核调优"
         echo -e "  ${CYAN} 9${NC}  服务精简"
         echo -e "  ${CYAN}10${NC}  系统垃圾清理"
         echo -e "  ${CYAN}11${NC}  NodeQuality测试"
@@ -1506,10 +1519,10 @@ main() {
                 docker_manage
                 continue
                 ;;
-            8)
-                kernel_tuning_menu
-                continue
-                ;;
+            # 8)
+            #     kernel_tuning_menu
+            #     continue
+            #     ;;
             9)
                 cleanup_services
                 ;;
@@ -1528,7 +1541,7 @@ main() {
                 enable_bbr
                 create_swap 2048 60
                 install_docker
-                auto_kernel_optimize "true" "true"
+                # auto_kernel_optimize "true" "true"
                 cleanup_services
                 linux_clean
                 echo ""
