@@ -398,9 +398,6 @@ disable_bbr() {
         return 0
     fi
 
-    log_info "当前拥塞控制: ${current_cc} → 恢复为 cubic"
-    modprobe tcp_cubic 2>/dev/null || true
-
     sysctl -w net.ipv4.tcp_congestion_control=cubic 2>/dev/null || true
     sysctl -w net.core.default_qdisc=fq_codel 2>/dev/null || true
 
@@ -980,9 +977,6 @@ docker_ipv6_on() {
 {
   "ipv6": true,
   "fixed-cidr-v6": "2001:db8:1::/64",
-  "experimental": true,
-  "ip6tables": true,
-
   "log-driver": "json-file",
   "log-opts": {
     "max-size": "2m",
@@ -1044,7 +1038,7 @@ docker_ipv6_off() {
     fi
 
     local tmp_file=$(mktemp)
-    jq 'del(.["fixed-cidr-v6"]) | .ipv6 = false' "$CONFIG_FILE" > "$tmp_file" 2>/dev/null
+    jq '.ipv6 = false' "$CONFIG_FILE" > "$tmp_file" 2>/dev/null
     if [ -s "$tmp_file" ]; then
         mv "$tmp_file" "$CONFIG_FILE"
         log_info "已关闭 Docker IPv6"
