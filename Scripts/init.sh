@@ -786,7 +786,7 @@ linux_clean() {
 # =============================================================================
 linux_tools() {
     log_step "常用工具安装"
-    local tools=("curl" "wget" "sudo" "jq" "htop" "vim" "unzip" "tar" "tree" "git")
+    local tools=("curl" "wget" "sudo" "jq" "htop" "vim" "unzip" "tar" "tree" "git" "ca-certificates")
     local to_install=()
 
     for t in "${tools[@]}"; do
@@ -999,7 +999,7 @@ EOF
 
     # 使用 jq 更新配置
     local tmp_file=$(mktemp)
-    jq '. + {"ipv6": true, "fixed-cidr-v6": "2001:db8:1::/64", "experimental": true, "ip6tables": true}' "$CONFIG_FILE" > "$tmp_file" 2>/dev/null
+    jq '. + {"ipv6": true, "fixed-cidr-v6": "2001:db8:1::/64"}' "$CONFIG_FILE" > "$tmp_file" 2>/dev/null
     if [ -s "$tmp_file" ]; then
         mv "$tmp_file" "$CONFIG_FILE"
         log_info "已开启 Docker IPv6"
