@@ -1,44 +1,37 @@
-//geo_location_checker=https://my.ippure.com/v1/info, https://raw.githubusercontent.com/Alex950808/quantumultx/master/Scripts/ip_checker2.js
+//geo_location_checker=http://ifconfig.co/json, https://raw.githubusercontent.com/Alex950808/quantumultx/master/Scripts/ip_checker2.js
+if ($response.statusCode !== 200) $done();
+
 if ($response.statusCode !== 200) $done();
 
 try {
   const {
     ip,
     country,
-    countryCode,
-    city,
-    region,
-    timezone,
+    country_iso,
     latitude,
     longitude,
-    asOrganization,
+    time_zone,
     asn,
-    fraudScore,
-    isResidential,
-    isBroadcast
+    asn_org
   } = JSON.parse($response.body);
 
-  // 双字母代码转换为国旗 Emoji
-  const flag = countryCode
-    ? String.fromCodePoint(...[...countryCode.toUpperCase()].map(c => 0x1f1a5 + c.charCodeAt(0)))
+  const flag = country_iso
+    ? String.fromCodePoint(...[...country_iso.toUpperCase()].map(c => 0x1f1a5 + c.charCodeAt(0)))
     : '🏴‍☠️';
 
-  const resType = isResidential ? '家宽' : '机房';
-  const broadcastType = isBroadcast ? '广播' : '原生';
+  const city = time_zone?.split('/')[1]?.replace(/_/g, ' ') || '未知';
 
   $done({
-    title: `${flag}『${city || '未知'}』`,
-    subtitle: `💋 ${asOrganization || 'Cross-GFW.org'} ➠ ${country || '未知'}`,
+    title: `${flag}『${city}』`,
+    subtitle: `💋 ${asn_org || 'Cross-GFW.org'} ➠ ${country || '未知'}`,
     ip,
     description: [
       `国家: ${country}`,
-      `地区: ${region}`,
       `城市: ${city}`,
       `IP: ${ip}`,
-      `属性: ${broadcastType} | ${resType}`,
-      `ASN: AS${asn} (${asOrganization})`,
-      `欺诈分: ${fraudScore ?? '未知'}`,
-      `时区: ${timezone}`,
+      `ASN: ${asn}`,
+      `服务商: ${asn_org}`,
+      `时区: ${time_zone}`,
       `定位: [${latitude},${longitude}]`
     ].join('\n')
   });
