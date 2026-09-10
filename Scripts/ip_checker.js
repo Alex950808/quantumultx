@@ -1,3 +1,4 @@
+//geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/Alex950808/quantumultx/master/Scripts/ip_checker.js
 if ($response.statusCode !== 200) $done();
 
 try {
