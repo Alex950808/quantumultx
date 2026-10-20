@@ -1,0 +1,72 @@
+#!/bin/sh
+# =============================================================================
+# Alpine Linux 全自动无人值守应答文件 (answerfile)
+# 用法: setup-alpine -f /path/to/answerfile
+# 或引导参数: answers=http://your-server/alpine-answerfile
+# =============================================================================
+
+# === 键盘与语言 ===
+KEYMAPOPTS="us us"
+
+# === 主机名 ===
+HOSTNAMEOPTS="-n alpine-host"
+
+# === 网络接口（自动 DHCP）===
+INTERFACESOPTS="auto lo"
+
+# === 时区 ===
+TIMEZONEOPTS="Asia/Shanghai"
+
+# === APK 镜像源（按需替换为内网源）===
+APKREPOSOPTS="https://mirrors.tuna.tsinghua.edu.cn/alpine/v3.20/main https://mirrors.tuna.tsinghua.edu.cn/alpine/v3.20/community"
+
+# === DNS（留空使用 DHCP 分配）===
+DNSOPTS=""
+
+# === NTP 时间同步 ===
+NTPOPTS="chrony"
+
+# === Root 密码（⚠️ 必须为 SHA-512 哈希，禁止明文）===
+# 生成命令: openssl passwd -6 "admin@123"
+ROOTPW="$6$I0LokBc8hoolqQCw$fbrsutLg/Ryn2Gez/Nnu7wZJMbLeaTjEY2xDsHFemj2NKMKJ7vvADD3JpR2PND9eIBlkbibXLalWv5VUXU6Lq0"
+
+# === 不创建普通用户 ===
+# 不设置 USER / USERPW / USERSHELL / USERGROUPS 等变量即跳过用户创建
+
+# === 允许 Root SSH 密码登录 ===
+ALLOW_ROOT_SSH_LOGIN="yes"
+
+# === SSH 公钥（可选，留空则仅密码认证）===
+SSH_KEY=""
+
+# === 磁盘分区：动态探测第一块物理磁盘 ===
+# lsblk -dnpo NAME,TYPE 仅列出真实块设备，awk 过滤出 disk 类型并取首个
+# -m sys 表示系统安装模式（/boot + / + swap 三分区布局）
+DISKOPTS="-m sys $(lsblk -dnpo NAME,TYPE 2>/dev/null | awk '$2=="disk"{print $1; exit}')"
+
+# === 安装后自定义脚本（等效 Debian late_command）===
+# setup-alpine 完成基础安装后会执行此函数
+post_install() {
+    # --- 安装额外软件包 ---
+    apk add --no-cache openssh vim curl wget net-tools bash dhcpcd
+
+    # --- dhcpcd 配置（替代默认 udhcpc）---
+    rc-update del udhcpc boot 2>/dev/null || true
+    rc-update add dhcpcd boot
+    service dhcpcd start
+
+    # 确保 sshd 配置正确（双重保险）
+    local SSHD_CONF="/etc/ssh/sshd_config"
+    if grep -q '^#*PermitRootLogin' "$SSHD_CONF"; then
+        sed -i 's/^#*PermitRootLogin.*/PermitRootLogin yes/' "$SSHD_CONF"
+    else
+        echo "PermitRootLogin yes" >> "$SSHD_CONF"
+    fi
+
+    # 启用并启动 sshd
+    rc-update add sshd default
+    service sshd start
+
+    # 禁用 root 以外的所有可登录 shell（安全加固）
+    awk -F: '$3 >= 1000 && $7 !~ /nologin|false/ {system("usermod -s /sbin/nologin " $1)}' /etc/passwd
+}
